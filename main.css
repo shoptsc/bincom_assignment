@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('img/my_photo1.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+
+/* 
+nav {
+    display: block;
+} */
+
+.burger-menu {
+    display: none;
+    padding: 1rem 1.5rem;
+    background: rgb(168, 109, 121);
+    width: 200px;
+    height: 100vh;
+}
+
+span a {
+    display: block;
+}
+
+ul {}
+
+li {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.profile {
+    margin: 5rem 0 0 0;
+    height: 100vh;
+}
+
+.profile h3 {
+    padding-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.profile h5 {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.profile h4 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.profile p {
+    padding: 10px;
+    line-height: 1.5rem;
+}
+
+.profile .icon1 {
+    text-align: center;
+    padding: 5rem;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-size: 100vh;
+        background-position: center;
+    }
+    .burger-menu {
+        display: block;
+        width: 250px;
+        position: fixed;
+    }
+    .burger-menu span {
+        display: none;
+    }
+    span a {
+        display: none;
+    }
+    ul {}
+}
