@@ -20,7 +20,7 @@ body {}
 
 .head div {
     text-align: center;
-    margin: 1rem 0 1rem 10rem;
+    margin: 1rem 0 1rem 5rem;
 }
 
 .head h3 {
@@ -87,7 +87,7 @@ span a {
     min-height: 50vh;
     background-color: whitesmoke;
     width: 75%;
-    margin: 2rem auto;
+    margin: 10rem auto;
     border-radius: 10px;
     padding: 1rem;
 }
@@ -399,6 +399,9 @@ footer {
         text-transform: capitalize;
         color: rgb(89, 139, 89);
         padding-left: 1rem;
+    }
+    .profile {
+        margin: 4rem auto;
     }
     span a {
         display: none;
