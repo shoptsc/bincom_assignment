@@ -4,93 +4,443 @@
     box-sizing: border-box;
 }
 
-body {
-    background: url('img/my_photo1.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: center; */
+body {}
+
+.container {
+    display: flex;
 }
 
+.head {
+    display: flex;
+    width: 100%;
+    background: whitesmoke;
+    color: rgb(89, 139, 89);
+    position: fixed;
+}
 
-/* 
-nav {
-    display: block;
-} */
+.head div {
+    text-align: center;
+    margin: 1rem 0 1rem 10rem;
+}
 
-.burger-menu {
+.head h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.head p {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.head1 {
     display: none;
-    padding: 1rem 1.5rem;
-    background: rgb(168, 109, 121);
-    width: 200px;
-    height: 100vh;
 }
 
 span a {
     display: block;
+    color: rgb(89, 139, 89);
+    margin: 2rem 1rem;
 }
 
-ul {}
-
-li {
-    list-style: none;
-    padding: 1rem 0;
-}
-
-li a {
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
-.profile {
-    margin: 5rem 0 0 0;
+#burger-menu {
+    display: block;
     height: 100vh;
 }
 
+.burger-menu {
+    display: none;
+}
+
+#burger-menu ul {
+    margin-top: 1rem;
+    background-color: whitesmoke;
+    display: none;
+    position: fixed;
+    height: 100vh;
+}
+
+#burger-menu li {
+    list-style: none;
+    padding: 1rem 1rem;
+    color: rgb(89, 139, 89);
+}
+
+#burger-menu li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(89, 139, 89);
+    padding-left: 1rem;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.profile {
+    min-height: 50vh;
+    background-color: whitesmoke;
+    width: 75%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
 .profile h3 {
-    padding-top: 3rem;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.5rem;
-}
-
-.profile h5 {
-    text-align: center;
-    font-size: 1rem;
-    padding: 1rem 0;
-}
-
-.profile h4 {
-    text-transform: uppercase;
-    text-align: center;
-    padding-bottom: 1.5rem;
+    padding-bottom: 5px;
 }
 
 .profile p {
-    padding: 10px;
+    padding: 0.8rem;
     line-height: 1.5rem;
 }
 
-.profile .icon1 {
+.profile .icons {
     text-align: center;
-    padding: 5rem;
 }
 
-@media screen and (min-width: 600px) {
+.profile .icons i {
+    padding: 0 1rem;
+    color: rgb(89, 139, 89);
+}
+
+.content #img {
+    background-color: whitesmoke;
+    width: 75%;
+    margin: 4rem auto;
+    border-radius: 10px;
+    min-height: 75vh;
+}
+
+.content #img h3 {
+    text-align: center;
+    text-transform: uppercase;
+    background: whitesmoke;
+    margin: 1rem auto;
+    padding: 2rem 0 0;
+    width: fit-content;
+}
+
+.content .img {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.content .img img {
+    width: 40%;
+    padding: 1rem 2px;
+}
+
+.content_2 {
+    display: block;
+}
+
+.content_2_col_1 {
+    background: whitesmoke;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+    min-height: 50vh;
+}
+
+.content_2_col_2 {
+    background: whitesmoke;
+    width: 75%;
+    margin: 4rem auto;
+    min-height: 50vh;
+    border-radius: 10px;
+}
+
+.content_2_col_1 h3,
+.content_2_col_2 h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.content_2_col_1 h4,
+.content_2_col_2 h4 {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1.5rem 0 0.5rem;
+}
+
+.content_2_col_1 p {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.content_2_col_2 p {
+    text-align: center;
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+}
+
+.content_2_col_2 li {
+    list-style-type: none;
+    padding: 0.5rem 2rem;
+}
+
+.content_2_col_2:last-child {
+    padding-bottom: 1rem;
+}
+
+.content_3 {
+    background-color: whitesmoke;
+    width: 75%;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+
+.content_3 h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.content_3 p {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.5rem 0;
+}
+
+.content_3_1 {
+    display: flex;
+    width: 100%;
+}
+
+.content_3_1 .img {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.content_4 {
+    background-color: whitesmoke;
+    width: 75%;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+
+.content_4 h4 {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.content_4 p {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.content_4 a {
+    text-decoration: none;
+    color: rgb(89, 139, 89);
+    padding: 0.5rem 0;
+}
+
+.content_4 .row {
+    display: block;
+}
+
+.content_4 .col {
+    width: 100%;
+    text-align: center;
+}
+
+.content_4 .col h4 {
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+.content_4 .col-1 p {
+    text-align: center;
+    margin: 0.5rem 1rem;
+}
+
+.content_4 .col p {
+    padding: 1rem 0;
+}
+
+.content_4 .col a {
+    background-color: rgb(112, 143, 236);
+    border-radius: 1px;
+    color: whitesmoke;
+    padding: 0.2rem;
+}
+
+.content_4 .col-1 {
+    padding-bottom: 3rem;
+}
+
+.content_4 .col img {
+    width: 80%;
+}
+
+.content_5 .col-1 {
+    background-color: whitesmoke;
+    width: 75%;
+    margin: 4rem auto;
+    border-radius: 10px;
+    min-height: 25vh;
+}
+
+.content_5 .col-1 h3 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.content_5 .col-1 h5 {
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.content_5 .col-1 p {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.content_5 .col {
+    display: flex;
+}
+
+.content_5 .col div {
+    width: 50%;
+}
+
+.contact {
+    background-color: whitesmoke;
+    width: 75%;
+    margin: 4rem auto 1rem;
+    border-radius: 10px;
+    min-height: 25%;
+}
+
+.contact h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
+
+.contact div {
+    padding: 0.5rem;
+}
+
+.contact div i {
+    padding-right: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: whitesmoke;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(89, 139, 89);
+}
+
+@media screen and (min-width: 750px) {
     body {
         background-size: 100vh;
         background-position: center;
     }
-    .burger-menu {
-        display: block;
-        width: 250px;
-        position: fixed;
-    }
-    .burger-menu span {
+    .head {
         display: none;
+    }
+    .head1 {
+        background: whitesmoke;
+        display: block;
+    }
+    .head1 h3 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .head1 p {
+        font-style: italic;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    #burger-menu {
+        display: none;
+    }
+    .burger-menu {
+        padding: 1rem 1.5rem;
+        /* background: rgb(179, 127, 138); */
+        background: whitesmoke;
+        color: rgb(89, 139, 89);
+        height: 100vh;
+        position: fixed;
+        display: block;
+        flex: 2;
+    }
+    .burger-menu ul {
+        margin-top: 1rem;
+        background-color: whitesmoke;
+        display: block;
+        margin-top: 1rem;
+        position: relative;
+        height: 100vh;
+    }
+    .burger-menu li {
+        list-style: none;
+        padding: 1rem 1rem;
+        color: rgb(89, 139, 89);
+    }
+    .burger-menu li a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: rgb(89, 139, 89);
+        padding-left: 1rem;
     }
     span a {
         display: none;
     }
-    ul {}
+    .content {
+        flex: 1;
+        margin-left: 15rem;
+        width: 50%;
+    }
+    .profile {
+        min-height: 75vh;
+        border-radius: 10px;
+        padding: 2rem;
+    }
+    .content .img img {
+        width: 30%;
+        padding: 1rem 2px;
+    }
+    .content_2 {
+        display: flex;
+        width: 75%;
+        min-height: 50vh;
+        margin: auto;
+    }
+    .content_2 .content_2_col_1 {
+        width: 48%;
+        margin: auto;
+    }
+    .content_2_col_2 {
+        width: 48%;
+        margin: 0 auto;
+    }
+    .content_4 .row {
+        display: flex;
+    }
+    .content_5 {
+        display: flex;
+        width: 75%;
+        margin: auto;
+    }
+    .content_5 .col-1 {
+        width: 30%;
+        margin: 0 auto;
+    }
 }
